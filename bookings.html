@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Luxury</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="banner">
+        <nav>
+            <img src="images-removebg-preview.png" class="logo">
+           
+           <ul>
+            <li><a href="home.html">Home</a> </li>
+            <li><a href="branches.html">Hotel Branches</a> </li>
+            <li><a href="adventures.html">Adventures</a> </li>
+            <li><a href="restaurants.html">Restaurants</a> </li>
+            <li><a href="bookings.html">Bookings</a> </li>
+            
+               
+           </ul>
+        </nav>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <form action="process_booking.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required><br><br>
+                
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required><br><br>
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room-type">
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                </select><br><br>
+                
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="3" cols="50"></textarea><br><br>
+                
+                <input type="submit" value="Book Now">
+            </form>
+             
+        <section class="booking-form">
+            <h2>Book an Adventure</h2>
+            <label for="adventure">Select Adventure</label>
+            <select id="adventure" name="adventure" required>
+                    <option value="surfing">Surfing</option>
+                    <option value="zipline">Zipline</option>
+                    <option value="hiking">Hiking</option>
+                </select>
+                <label for="participants">Number of Participants</label>
+                <input type="number" id="participants" name="participants" min="1" required>
+
+                <button type="submit">Book Adventure</button>
+        </section>
+          
+    <section class="booking-form">
+        <h2>Book an Award Ceremony</h2>
+        <form action="award-ceremony-booking.php" method="POST">
+            <label for="ceremony-type">Ceremony Type</label>
+            <select id="ceremony-type" name="ceremony-type" required>
+                <option value="business">Business Awards</option>
+                <option value="educational">Educational Awards</option>
+                <option value="entertainment">Entertainment Awards</option>
+            </select>
+
+            <label for="date">Select Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Book Award Ceremony</button>
+        </form>
+    </section>
+<!-- Wedding Booking  -->
+<section class="booking-form">
+    <h2>Book a Wedding</h2>
+    <form action="wedding-booking.php" method="POST">
+        <label for="wedding-type">Wedding Type</label>
+        <select id="wedding-type" name="wedding-type" required>
+            <option value="formal">Formal Wedding</option>
+            <option value="informal">Informal Wedding</option>
+            <option value="destination">Destination Wedding</option>
+        </select>
+        <label for="wedding-date">Select Wedding Date</label>
+            <input type="date" id="wedding-date" name="wedding-date" required>
+
+            <button type="submit">Book Wedding</button>
+        </form>
+    </section>
+    </main>
+    <br><br><br><br>
+    <footer>
+        <p>&copy; Grand Luxury 2023. All rights reserved.</p>
+    </footer>
+    </div>
+    <script src="humburger.js"></script>
+</body>
+</html>
+            
+              
+                

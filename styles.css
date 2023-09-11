@@ -1,0 +1,180 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0; 
+    color: rgb(6, 0, 5);
+}
+
+.banner{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.10),rgba(0, 0, 0, 0.10)) ,url('image.jpg') ; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+     
+}
+footer {
+    background-color: linear-gradient(rgba(171, 249, 129, 0.75),rgba(238, 44, 187, 0.75)) ;
+    color: rgb(28, 25, 25);
+    text-align: center;
+    padding: 1rem;
+}
+
+.logo{
+    width: 200px;
+    cursor: pointer;
+
+}
+
+nav {
+    width: 85%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a{
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li:hover{
+    font-size: 125%;
+}
+
+.introimg, .subimg, .restimg{
+    width: 50%;
+    height: 50%;
+
+}
+
+.sub-section{
+text-align: center;
+}
+
+.intro{
+    text-align: center;
+}
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.Bentotaimg{
+    width: 600px;
+}
+.Wadduwaimg{
+    width: 600px;
+}
+.Galleimg{
+    width: 600px;
+}
+
+
+/* Add some basic styling to the sections */
+.branch {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+/* Style for the images within each section */
+.branch-info img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure text content doesn't exceed the width of the container */
+.branch-info p {
+    max-width: 100%;
+}
+
+/* Add additional styling as needed for responsiveness */
+@media (max-width: 768px) {
+    .branch {
+        flex-direction: column; /* Stack sections on smaller screens */
+    }
+}
+.adventure {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}        
+
+.Surfing {
+    max-width: 100%;
+}
+
+/* Style the heading */
+h2 {
+    color: #100a0a;
+}
+/* Style the logo */
+.logo {
+    max-width: 100px;
+}
+.Zipline {
+    max-width: 100%;
+}
+.Hiking {
+    max-width: 100%;
+}
+.restaurant {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}  
+.restaurantimg {
+    max-width: 100%;
+}     
+.thaiimg {
+    max-width: 100%;
+}
+.logo {
+    height: 250px;
+}
+.weddingimg {
+    width: 600px;
+}
+.awardimg {
+    width: 600px;
+}
+
+
+
+
